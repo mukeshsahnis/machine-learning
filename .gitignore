@@ -1,0 +1,13 @@
+# Python bytecode:
+*.pyc
+*.pyo
+
+logs/*
+tmp
+.DS_Store
+
+# Editor temp files:
+.vscode
+.envrc
+.venv
+

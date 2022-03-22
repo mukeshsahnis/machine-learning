@@ -1,0 +1,4 @@
+-r generated_requirements.txt
+
+# to generate the generated_requirements.txt file
+pip-tools==6.5.1

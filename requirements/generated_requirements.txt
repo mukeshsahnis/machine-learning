@@ -24,6 +24,8 @@ bleach==4.1.0
     # via nbconvert
 cffi==1.15.0
     # via argon2-cffi-bindings
+click==8.0.4
+    # via nltk
 cycler==0.11.0
     # via matplotlib
 debugpy==1.5.1
@@ -65,6 +67,10 @@ jinja2==3.0.3
     # via
     #   nbconvert
     #   notebook
+joblib==1.1.0
+    # via
+    #   nltk
+    #   scikit-learn
 jsonschema==4.4.0
     # via nbformat
 jupyter==1.0.0
@@ -91,6 +97,8 @@ jupyterlab-widgets==1.1.0
     # via ipywidgets
 kiwisolver==1.4.0
     # via matplotlib
+lxml==4.8.0
+    # via -r requirements/requirements.in
 markupsafe==2.1.1
     # via jinja2
 matplotlib==3.5.1
@@ -119,6 +127,8 @@ nest-asyncio==1.5.4
     #   jupyter-client
     #   nbclient
     #   notebook
+nltk==3.7
+    # via -r requirements/requirements.in
 notebook==6.4.10
     # via
     #   jupyter
@@ -128,6 +138,8 @@ numpy==1.22.3
     #   -r requirements/requirements.in
     #   matplotlib
     #   pandas
+    #   scikit-learn
+    #   scipy
 packaging==21.3
     # via
     #   bleach
@@ -190,6 +202,12 @@ qtconsole==5.2.2
     # via jupyter
 qtpy==2.0.1
     # via qtconsole
+regex==2022.3.15
+    # via nltk
+scikit-learn==1.0.2
+    # via -r requirements/requirements.in
+scipy==1.8.0
+    # via scikit-learn
 send2trash==1.8.0
     # via notebook
 six==1.16.0
@@ -205,12 +223,16 @@ terminado==0.13.3
     # via notebook
 testpath==0.6.0
     # via nbconvert
+threadpoolctl==3.1.0
+    # via scikit-learn
 tornado==6.1
     # via
     #   ipykernel
     #   jupyter-client
     #   notebook
     #   terminado
+tqdm==4.63.0
+    # via nltk
 traitlets==5.1.1
     # via
     #   ipykernel
